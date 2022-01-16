@@ -1,0 +1,16 @@
+@import "../../common.scss";
+.events-container {
+  width: 100%;
+  background: #eee;
+
+  @include bp($medium) {
+    position: absolute;
+    top: 1.25rem;
+    left: 1.25rem;
+    z-index: 3;
+    width: 25rem;
+    height: calc(100% - 2.5rem);
+    box-shadow: 3px 3px 10px 0px black;
+    border-radius: 5px;
+  }
+}

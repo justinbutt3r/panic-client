@@ -1,0 +1,11 @@
+// width
+$duo-width: calc((100% - 1.5em) / 2);
+
+// breakpoints
+$medium: 768;
+
+@mixin bp($screen) {
+  @media (min-width: $screen+"px") {
+    @content;
+  }
+}

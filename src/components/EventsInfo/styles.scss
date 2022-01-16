@@ -1,0 +1,58 @@
+.events-info {
+  width: 100%;
+  height: 100%;
+  background: white;
+  padding: 1.25rem 0.5rem;
+
+  &-back {
+    font-size: 0.75rem;
+    color: #444;
+    text-align: left;
+    text-transform: uppercase;
+    display: block;
+  }
+
+  &-loader {
+    margin: 2rem auto;
+  }
+
+  &-container {
+    background: white;
+    padding-top: 2vh;
+  }
+
+  &-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    :first-child {
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+    :last-child {
+      font-size: 0.75rem;
+    }
+  }
+
+  &-sub {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-location {
+    font-size: 1.175rem;
+    font-weight: 300;
+    text-align: left;
+    color: #555;
+    padding: 1rem 0.5rem;
+  }
+
+  &-description {
+    color: #555;
+    font-size: 0.875rem;
+    text-align: left;
+    margin-top: 0.5rem;
+  }
+}

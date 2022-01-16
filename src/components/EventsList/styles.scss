@@ -1,0 +1,12 @@
+.events-list {
+  width: 100%;
+  padding: 1.25rem 0.5rem;
+  height: 100%;
+  overflow: auto;
+  > a {
+    display: block;
+    &:not(:last-of-type) {
+      margin-bottom: 1.25rem;
+    }
+  }
+}

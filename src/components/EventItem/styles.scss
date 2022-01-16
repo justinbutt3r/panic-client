@@ -1,0 +1,29 @@
+@import "../../common.scss";
+
+.event-item {
+  width: 100%;
+  background: white;
+  padding: 0.5rem 0.5rem 1.25rem;
+  border-radius: 5px 5px 0 0;
+  border-bottom: 1px solid black;
+
+  &-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    :first-child {
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+    :last-child {
+      font-size: 0.75rem;
+    }
+  }
+
+  &-location {
+    font-size: 1.175rem;
+    font-weight: 300;
+    text-align: left;
+  }
+}
