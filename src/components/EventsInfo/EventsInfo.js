@@ -12,10 +12,10 @@ const data = {
   location: "75 Beach road, Green Point, Cape Town",
   age: "25",
   gender: "Male",
-  description:
+  details:
     "Duis incididunt aute quis laborum proident non aliqua magna. Ex commodo velit incididunt labore consectetur consequat officia sit cupidatat aliquip eu et. Ea velit adipisicing sint id duis sint officia labore labore id. Voluptate mollit qui pariatur elit nisi ea dolor Lorem in est cillum reprehenderit non. In duis dolor proident in id dolore eu amet incididunt veniam aliquip excepteur.",
   lat: -33.33,
-  long: 18.66,
+  lng: 18.66,
 };
 
 const EventsInfo = ({ map }) => {
@@ -42,8 +42,6 @@ const EventsInfo = ({ map }) => {
     }
   }, [id, map]);
 
-  console.log(hasError);
-
   return (
     <div className="events-info">
       <Link to="/" className="events-info-back">
@@ -66,13 +64,13 @@ const EventsInfo = ({ map }) => {
           </div>
           <div className="events-info-location">
             <div>{data.location}</div>
-            Latitude: {data.lat} Longitude: {data.long}
+            Latitude: {data.lat} , Longitude: {data.lng}
           </div>
           <div className="events-info-sub">
             {data.age && <div>Age: {data.age}</div>}
             {data.gender && <div>Gender: {data.gender}</div>}
           </div>
-          <div className="events-info-description">{data.description}</div>
+          <div className="events-info-description">{data.details}</div>
         </div>
       )}
     </div>
